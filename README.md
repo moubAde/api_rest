@@ -148,7 +148,7 @@ Get all contacts.
 
 **Condition** : Something get wrong with the request.
 
-**Code** : `500 BAD REQUEST`
+**Code** : `500 Internal Server Error`
 
 ---
 
@@ -189,7 +189,7 @@ Get contact with id.
 
 **Condition** : Something get wrong with the request.
 
-**Code** : `500 BAD REQUEST`
+**Code** : `500 Internal Server Error`
 
 ---
 
@@ -236,7 +236,7 @@ firstName=Mohamed&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&phon
 
 **Condition** : Something get wrong with the request.
 
-**Code** : `500 BAD REQUEST`
+**Code** : `500 Internal Server Error`
 
 ---
 
@@ -283,7 +283,7 @@ firstName=Mohamed&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&phon
 
 **Condition** : Something get wrong with the request.
 
-**Code** : `500 BAD REQUEST`
+**Code** : `500 Internal Server Error`
 
 ---
 
@@ -317,4 +317,4 @@ Delete a contact.
 
 **Condition** : Something get wrong with the request.
 
-**Code** : `500 BAD REQUEST`
+**Code** : `500 Internal Server Error`
