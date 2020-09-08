@@ -1,0 +1,31 @@
+const mongoose = require("mongoose");
+
+const schema = mongoose.schema;
+
+const ContactSchema = new mongoose.Schema({
+  firstName: {
+    type: String,
+    required: "Entrer un prénom",
+  },
+  lastName: {
+    type: String,
+    required: "Entrer un nom de famille",
+  },
+  email: {
+    type: String,
+  },
+  company: {
+    type: String,
+  },
+  phone: {
+    type: Number,
+  },
+  created_date: {
+    type: Date,
+    default: Date.now(),
+  },
+});
+
+module.exports = {
+  ContactSchema,
+};

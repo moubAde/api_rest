@@ -1,0 +1,26 @@
+@BASE_URL = http://127.0.0.1:30010
+
+###
+# Description: API root
+# @name root
+GET {{BASE_URL}}/ HTTP/1.1
+
+###
+# Description: Get all contact
+# @name get_contact
+GET {{BASE_URL}}/contact HTTP/1.1
+
+###
+# Description: Add a contact
+# @name post_contact
+POST {{BASE_URL}}/contact HTTP/1.1
+
+###
+# Description: Update a contact
+# @name put_contact
+PUT {{BASE_URL}}/contact/2 HTTP/1.1
+
+###
+# Description: Delete a contact
+# @name delete_contact
+DELETE {{BASE_URL}}/contact/2 HTTP/1.1
