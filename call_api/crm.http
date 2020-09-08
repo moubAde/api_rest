@@ -23,7 +23,7 @@ GET {{BASE_URL}}/contact HTTP/1.1
 ###
 # Description: Get contact with id
 # @name get_contact_with_id
-GET {{BASE_URL}}/contact/5f5750aff065b44e9b7b2aa8 HTTP/1.1
+GET {{BASE_URL}}/contact/5f5750b1f065b44e9b7b2aa9 HTTP/1.1
 
 ###
 # Description: Add a contact
@@ -36,7 +36,7 @@ firstName=Mohamed&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&phon
 ###
 # Description: Update a contact
 # @name put_contact
-PUT {{BASE_URL}}/contact/5f5750aff065b44e9b7b2aa8 HTTP/1.1
+PUT {{BASE_URL}}/contact/5f576a5e3ec6175edf32cfe3 HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 firstName=Moubarak&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&phone=0505721878
@@ -44,4 +44,4 @@ firstName=Moubarak&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&pho
 ###
 # Description: Delete a contact
 # @name delete_contact
-DELETE {{BASE_URL}}/contact/5f57505a8db7b04e78404716 HTTP/1.1
+DELETE {{BASE_URL}}/contact/5f5750b1f065b44e9b7b2aa9 HTTP/1.1

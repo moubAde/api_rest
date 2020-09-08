@@ -14,6 +14,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(URL_DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
