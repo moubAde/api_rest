@@ -6,21 +6,42 @@
 GET {{BASE_URL}}/ HTTP/1.1
 
 ###
+# Description: API root
+# @name sky_image
+GET {{BASE_URL}}/sky.jpeg HTTP/1.1
+
+###
+# Description: API root
+# @name football_image
+GET {{BASE_URL}}/football.jpeg HTTP/1.1
+
+###
 # Description: Get all contact
 # @name get_contact
 GET {{BASE_URL}}/contact HTTP/1.1
 
 ###
+# Description: Get contact with id
+# @name get_contact_with_id
+GET {{BASE_URL}}/contact/5f5750aff065b44e9b7b2aa8 HTTP/1.1
+
+###
 # Description: Add a contact
 # @name post_contact
 POST {{BASE_URL}}/contact HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+firstName=Mohamed&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&phone=0505721875
 
 ###
 # Description: Update a contact
 # @name put_contact
-PUT {{BASE_URL}}/contact/2 HTTP/1.1
+PUT {{BASE_URL}}/contact/5f5750aff065b44e9b7b2aa8 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+firstName=Moubarak&lastName=Adegbindin&email=ade@gmail.com&company=Personnel&phone=0505721878
 
 ###
 # Description: Delete a contact
 # @name delete_contact
-DELETE {{BASE_URL}}/contact/2 HTTP/1.1
+DELETE {{BASE_URL}}/contact/5f57505a8db7b04e78404716 HTTP/1.1

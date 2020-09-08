@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
-const ContactSchema = new mongoose.Schema({
+const ContactSchema = new Schema({
   firstName: {
     type: String,
-    required: "Entrer un prénom",
+    required: "Enter a first name",
   },
   lastName: {
     type: String,
-    required: "Entrer un nom de famille",
+    required: "Enter a last name",
   },
   email: {
     type: String,
